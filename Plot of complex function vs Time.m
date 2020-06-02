@@ -1,0 +1,10 @@
+t=0:pi/20:4*pi;
+y=exp((-0.2).*t).*(cos(t)+i*sin(t));
+plot(t,real(y),'b');
+hold on;
+plot(t,imag(y),'r');
+title("Plot of complex function vs Time");
+xlabel('\bf\itt');  
+ylabel('\bf\ity(t)');  
+legend('real','img');
+hold off;
